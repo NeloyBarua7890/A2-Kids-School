@@ -7,3 +7,60 @@
   font-weight: 400px;
   font-style: normal;
 }
+
+/* Shared Styles */
+.display-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text-color-1 {
+  color: rgba(254, 163, 1, 1);
+}
+
+.text-color-2 {
+  color: rgba(1, 172, 253, 1);
+}
+
+.text-color-3 {
+  color: rgba(5, 212, 223, 1);
+}
+
+.text-color-4 {
+  color: rgba(93, 88, 239, 1);
+}
+
+/* Nav Styles */
+.nav-container {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.nav-title {
+  font-size: 32px;
+  font-weight: 700;
+  padding: 15px;
+}
+
+.nav-item {
+  list-style: none;
+  margin-right: 32px;
+}
+
+.nav-link {
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.nav-btn {
+  font-size: 20px;
+  font-weight: 600;
+  height: 50px;
+  padding: 10px 60px;
+  border-radius: 12px;
+  background-color: rgba(254, 163, 1, 1);
+  color: rgba(255, 255, 255, 1);
+  border: none;
+}
