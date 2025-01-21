@@ -31,13 +31,13 @@
   color: rgba(93, 88, 239, 1);
 }
 
-/* Nav Styles */
-.nav-container {
+/* Navbar Styles */
+.navbar {
   max-width: 1150px;
   margin: 0 auto;
 }
 
-.nav-title {
+.logo {
   font-size: 32px;
   font-weight: 700;
   padding: 15px;
