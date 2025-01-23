@@ -108,9 +108,7 @@
 
 /* Curriculum Section */
 .curriculum-container {
-  background-image: url(/assets/bg.png);
-  max-width: 1440px;
-  margin: 0 auto;
+  background-image: url("../assets/bg.png");
 }
 
 .section-title {
@@ -133,6 +131,10 @@
   border-radius: 18px;
   box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .curriculum-card a {
