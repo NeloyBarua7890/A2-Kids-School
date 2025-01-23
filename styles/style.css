@@ -99,26 +99,31 @@
   margin: 24px 0px;
 }
 
-.description {
+.description p {
   font-size: 1.25rem;
   font-weight: 400;
   text-align: left;
-  margin: 24px 0px;
+}
+
+@media screen and (max-width: 576px) {
+  .banner {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
 }
 
 /* Curriculum Section */
 .curriculum-container {
   background-image: url("../assets/bg.png");
+  margin-left: 140px;
+  margin-right: 140px;
 }
 
 .section-title {
   text-align: center;
   font-size: 2.875rem;
   font-weight: 700;
-}
-.curriculum-container {
-  margin-left: 140px;
-  margin-right: 140px;
 }
 
 .curriculum {
@@ -189,6 +194,87 @@
       rgba(255, 255, 255, 0) 40%
     ),
     rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 576px) {
+  .section-title {
+    text-align: center;
+  }
+
+  .curriculum {
+    flex-direction: column;
+  }
+}
+
+/* Our Stories Section */
+.our-stories-container {
+  background: url("../assets/bg.png"),
+    linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+  padding: 100px;
+}
+
+.our-stories-container h2 {
+  font-size: 2.875rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.story-container {
+  display: flex;
+  gap: 20px;
+}
+
+.first-column {
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 16px;
+}
+
+.first-column img {
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+}
+
+.first-column h5 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.first-column h5,
+p {
+  margin: 40px;
+}
+
+.second-column {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.second-column-story {
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 16px;
+}
+
+.second-column-story img {
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+}
+
+.second-column-story h6 {
+  margin: 30px;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 576px) {
+  .our-stories-container h2 {
+    text-align: center;
+  }
+  .first-column,
+  .second-column {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* Footer Section */
